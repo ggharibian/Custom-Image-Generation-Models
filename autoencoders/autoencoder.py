@@ -34,5 +34,5 @@ class Autoencoder(nn.Module):
             loss = nn.CrossEntropyLoss()
             return X, loss(X, y)
         else:
-            return x
+            return X, None
             
